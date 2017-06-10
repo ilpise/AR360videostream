@@ -1,0 +1,55 @@
+.header {
+    width: 100%;
+    height: 100px;
+    /*position: fixed;*/
+    top: 0;
+    z-index: 999999;
+    display: block;
+}
+.titleName {
+    width: 100%;
+    height: 100px;
+    float: left;
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 26px;
+    font-weight: 400;
+    display: block;
+}
+
+.logo-image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.main-content{
+  /*max-width: 100%;*/
+  /*padding: 2rem 6rem;*/
+  padding-top: 2px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  display: block;
+}
+
+body{
+    margin: 0;
+}
+body.vjs-full-window .player_wrapper{
+    position: static;
+}
+.player_wrapper{
+    position: relative;
+    /*max-width: 960px;*/
+    width: 100%;
+}
+.player_container{
+    padding-top: 56.25%;
+}
+#videojs-panorama-player{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
