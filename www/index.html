@@ -4,28 +4,60 @@
     <meta charset="utf-8">
     <title>videojs-panorama Demo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="./css/video-js.css" rel="stylesheet">
+    <link href="./css/video-js.min.css" rel="stylesheet">
     <link href="./css/main.css" rel="stylesheet">
-    <link href="./css/videojs-panorama.css" rel="stylesheet">
+    <link href="./css/jquery.mobile-1.4.5.css" rel="stylesheet">
+    <link href="./css/videojs-panorama.min.css" rel="stylesheet">
+    <link rel='stylesheet' href='./css/fullcalendar.min.css' />
+    <script src="./js/external/jquery.min.js"></script>
+    <script src="./js/external/jquery.mobile-1.4.5.min.js"></script>
+
+    <script src="./js/external/video.min.js"></script>
+    <script src="./js/external/three.js"></script>
+    <script src="./js/external/videojs-panorama.v5.min.js"></script>
+
+
+    <script src="./js/external/moment.min.js"></script>
+    <script src="./js/external/fullcalendar.min.js"></script>
+    <script src="./js/external/tabbar.min.js"></script>
 </head>
 <body>
   <div class="header">
-      <div class="titleName"><img class="logo-image" src="img/logo2.png"></div>
-  </div>
-  <!-- Player -->
-  <div class="main-content">
-    <div class="player_wrapper">
-        <div class="player_container">
-            <video id="videojs-panorama-player" class="video-js vjs-default-skin" poster="assets/poster.jpg" crossorigin="anonymous" controls>
-                <source src="assets/shark.mp4" type='video/mp4'>
-            </video>
-        </div>
-    </div>
+      <div class="titleName"><img class="logo-image" src="img/logo3.png"></div>
   </div>
 
-<script src="./js/external/video.js"></script>
+  <div class="main-content">
+    <!--TAB-BAR-->
+    <div data-role="tabs" id="tabs">
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#one" data-ajax="false">View Lesson</a></li>
+          <li><a href="#two" data-ajax="false">Calendar</a></li>
+        </ul>
+      </div>
+      <div id="one" class="ui-body-d ui-content">
+        <!-- Player -->
+        <div class="player_wrapper">
+            <div class="player_container">
+                <video id="videojs-panorama-player" class="video-js vjs-default-skin" poster="assets/poster.jpg" crossorigin="anonymous" controls>
+                    <source src="assets/shark.mp4" type='video/mp4'>
+                </video>
+            </div>
+        </div>
+
+      </div>
+      <div id="two">
+        <!-- Calendar -->
+        <div id='calendar'></div>
+      </div>
+    </div>
+
+  </div>
+
+
+<!-- <script src="./js/external/video.min.js"></script>
 <script src="./js/external/three.js"></script>
-<script src="./js/external/videojs-panorama.v5.js"></script>
+<script src="./js/external/videojs-panorama.v5.min.js"></script> -->
 <script>
     function isMobile() {
         var check = false;
@@ -60,5 +92,7 @@
         });
     }(window, window.videojs));
 </script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

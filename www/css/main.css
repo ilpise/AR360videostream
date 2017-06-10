@@ -40,8 +40,9 @@ body.vjs-full-window .player_wrapper{
 }
 .player_wrapper{
     position: relative;
-    /*max-width: 960px;*/
+    max-width: 960px;
     width: 100%;
+    margin:auto;
 }
 .player_container{
     padding-top: 56.25%;
@@ -52,4 +53,10 @@ body.vjs-full-window .player_wrapper{
     height: 100%;
     top: 0;
     left: 0;
+}
+
+#calendar {
+  max-width: 960px;
+  width: 100%;
+  margin: auto;
 }

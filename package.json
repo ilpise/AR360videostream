@@ -1,17 +1,17 @@
 {
-    "name": "toptal.hello",
-    "displayName": "HelloToptal",
+    "name": "AR360videostream",
+    "displayName": "AR360",
     "version": "1.0.0",
-    "description": "A sample Apache Cordova application that responds to the deviceready event.",
+    "description": "Videostream for schools",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "author": "Apache Cordova Team",
+    "author": "pisewip@gmail.com",
     "license": "Apache-2.0",
     "dependencies": {
         "cordova-browser": "^4.1.0",
-        "cordova-plugin-whitelist": "^1.3.2",
+        "cordova-plugin-whitelist": "^1.3.2"
     },
     "cordova": {
         "plugins": {
